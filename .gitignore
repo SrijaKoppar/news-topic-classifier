@@ -1,0 +1,17 @@
+# Python
+__pycache__/
+*.pyc
+.pytest_cache/
+
+# Virtual environments
+.venv/
+venv/
+
+# Trained artifacts (rebuilt by the training command)
+models/*
+!models/.gitkeep
+
+# OS / editor
+.DS_Store
+.idea/
+.vscode/
