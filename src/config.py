@@ -62,3 +62,15 @@ if __name__ == "__main__":
     print("SEED       :", RANDOM_SEED)
     print("SPLITS     :", SPLIT_COLUMNS)
     print("N LABELS   :", len(LABELS))
+
+    # --- Baseline: TF-IDF + logistic regression (Phase 4) ------------------------
+TFIDF_PARAMS = dict(
+    ngram_range=(1, 2),
+    min_df=2,
+    sublinear_tf=True,
+    lowercase=True,
+    strip_accents="unicode",
+)
+LR_C_GRID = (0.3, 1.0, 3.0, 10.0, 30.0)
+LR_CLASS_WEIGHT_GRID = (None, "balanced")
+LR_MAX_ITER = 1000
