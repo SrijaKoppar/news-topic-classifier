@@ -2,7 +2,7 @@
 
 Usage:
     python -m src.explore
-    python -m src.explore --data data/fake_sample.csv --out results/_fake_exploration_report.md
+        python -m src.explore --out results/my_report.md
 """
 import argparse
 import sys

@@ -2,7 +2,7 @@
 
 Usage:
     python -m src.check_splits
-    python -m src.check_splits --data data/fake_sample.csv
+        python -m src.check_splits --seed 7
     python -m src.check_splits --seed 7
 """
 import argparse

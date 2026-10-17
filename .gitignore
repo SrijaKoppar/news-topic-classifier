@@ -16,6 +16,3 @@ models/*
 .idea/
 .vscode/
 
-# Fake smoke-test data (never used for results)
-data/fake_*.csv
-results/_fake_*
