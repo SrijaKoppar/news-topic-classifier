@@ -1,0 +1,38 @@
+{
+  "rule": "highest validation macro-F1; the common model is the one with the higher mean validation macro-F1 across split_a and split_b",
+  "validation": [
+    {
+      "split": "split_a",
+      "model": "tfidf",
+      "val_macro_f1": 0.6975,
+      "val_accuracy": 0.7564
+    },
+    {
+      "split": "split_a",
+      "model": "embed",
+      "val_macro_f1": 0.7003,
+      "val_accuracy": 0.7639
+    },
+    {
+      "split": "split_b",
+      "model": "tfidf",
+      "val_macro_f1": 0.6697,
+      "val_accuracy": 0.7489
+    },
+    {
+      "split": "split_b",
+      "model": "embed",
+      "val_macro_f1": 0.6942,
+      "val_accuracy": 0.7636
+    }
+  ],
+  "best_per_split": {
+    "split_a": "embed",
+    "split_b": "embed"
+  },
+  "mean_val_macro_f1": {
+    "embed": 0.6973,
+    "tfidf": 0.6836
+  },
+  "common_model": "embed"
+}

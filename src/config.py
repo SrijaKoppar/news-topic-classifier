@@ -80,3 +80,5 @@ EMBED_MODEL_NAME = "sentence-transformers/all-MiniLM-L6-v2"
 EMBED_MAX_SEQ_LENGTH = 256   # longer texts are truncated (very few exceed this)
 EMBED_BATCH_SIZE = 64
 EMBED_C_GRID = (0.1, 0.3, 1.0, 3.0, 10.0)
+
+MODEL_NAMES = ("tfidf", "embed")
