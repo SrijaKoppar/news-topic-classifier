@@ -74,3 +74,9 @@ TFIDF_PARAMS = dict(
 LR_C_GRID = (0.3, 1.0, 3.0, 10.0, 30.0)
 LR_CLASS_WEIGHT_GRID = (None, "balanced")
 LR_MAX_ITER = 1000
+
+# --- Sentence-embedding model (Phase 5) --------------------------------------
+EMBED_MODEL_NAME = "sentence-transformers/all-MiniLM-L6-v2"
+EMBED_MAX_SEQ_LENGTH = 256   # longer texts are truncated (very few exceed this)
+EMBED_BATCH_SIZE = 64
+EMBED_C_GRID = (0.1, 0.3, 1.0, 3.0, 10.0)
