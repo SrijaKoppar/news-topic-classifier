@@ -88,3 +88,7 @@ ABSTAIN_THRESHOLDS = (0.30, 0.35, 0.40, 0.45, 0.50, 0.55,
                       0.60, 0.65, 0.70, 0.75, 0.80)
 # Assumption: reviewers can handle ~20% of articles, so coverage must stay >= 80%.
 ABSTAIN_MIN_COVERAGE = 0.80
+
+# --- Serving (Phase 9) ----------------------------------------------------------
+# Assumption: serve the embedding model fitted on ALL split_a train rows.
+SERVE_MODEL_DIR = MODELS_DIR / "final" / "embed_split_a"

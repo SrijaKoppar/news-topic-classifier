@@ -1,0 +1,9 @@
+{
+  "requests_timed": 300,
+  "mean_ms": 6.0,
+  "p50_ms": 5.8,
+  "p95_ms": 8.3,
+  "cpu_seconds_per_1000_predictions": 6.0,
+  "cost_usd_per_1000_predictions": 0.0,
+  "note": "local CPU, in-process (no network); cost is $0 apart from local compute"
+}
