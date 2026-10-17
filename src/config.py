@@ -82,3 +82,9 @@ EMBED_BATCH_SIZE = 64
 EMBED_C_GRID = (0.1, 0.3, 1.0, 3.0, 10.0)
 
 MODEL_NAMES = ("tfidf", "embed")
+
+# --- Abstention (Phase 7) -----------------------------------------------------
+ABSTAIN_THRESHOLDS = (0.30, 0.35, 0.40, 0.45, 0.50, 0.55,
+                      0.60, 0.65, 0.70, 0.75, 0.80)
+# Assumption: reviewers can handle ~20% of articles, so coverage must stay >= 80%.
+ABSTAIN_MIN_COVERAGE = 0.80

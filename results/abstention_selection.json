@@ -1,0 +1,44 @@
+{
+  "model": "embed",
+  "threshold": 0.5,
+  "rule": "highest mean macro-F1 on answered cases, among thresholds with validation coverage >= the floor on both splits",
+  "min_coverage_assumption": 0.8,
+  "data_used": "validation predictions only (models fitted on train minus validation)",
+  "at_threshold": [
+    {
+      "split": "split_a",
+      "threshold": 0.5,
+      "coverage": 0.839,
+      "n_answered": 2480,
+      "n_abstained": 476,
+      "pct_abstained": 16.1028,
+      "macro_f1_answered": 0.76,
+      "accuracy_answered": 0.8177,
+      "errors_caught": 246,
+      "pct_errors_caught": 35.2436,
+      "correct_lost": 230,
+      "pct_correct_lost": 10.186,
+      "pct_abstained_that_were_wrong": 51.6807
+    },
+    {
+      "split": "split_b",
+      "threshold": 0.5,
+      "coverage": 0.8403,
+      "n_answered": 2520,
+      "n_abstained": 479,
+      "pct_abstained": 15.972,
+      "macro_f1_answered": 0.7598,
+      "accuracy_answered": 0.8187,
+      "errors_caught": 252,
+      "pct_errors_caught": 35.543,
+      "correct_lost": 227,
+      "pct_correct_lost": 9.9127,
+      "pct_abstained_that_were_wrong": 52.6096
+    }
+  ],
+  "threshold_if_coverage_floor_were": {
+    "70%": 0.6,
+    "80%": 0.5,
+    "90%": 0.4
+  }
+}
