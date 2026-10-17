@@ -1,0 +1,5 @@
+split,model,val_macro_f1,test_macro_f1,test_accuracy,n_test,chosen_on_validation
+split_a,tfidf,0.6975,0.6851,0.7546,5298,False
+split_a,embed,0.7003,0.6952,0.7686,5298,True
+split_b,tfidf,0.6697,0.5596,0.7113,5008,False
+split_b,embed,0.6942,0.6059,0.7482,5008,True
